@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="widt=device-width, initial-scale=1.0">
+        <!-- script src -->
+        <script src=""></script>
+        <script type="text/javascript" src=""></script>
+        <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+        <title> Guess Animal Crossing </title>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+        <div style="text-align: center; font-size: 3rem;"> Guess which animal you look like </div>
+        <div style="display: flex; width: 100%; justify-content: center; align-items: center;">
+            <video id="webcam" autoplay playsinline width="600" height="400"></video>
+        </div>
+        <div style="display: flex; width: 100%; height: 6rem; justify-content: center; align-items: center; flex-direction: column;">
+            <div id="btn-capture"> Press! </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr">
+            <canvas id="canvas" class="d-none">
+            <img id="result" src(unknown)>
+        </div>
+
+        <script type="module">
+            const webcamElement = document.getElementById('webcam');
+            const canvasElement = document.getElementById('canvas');
+            const snapSoundElement = document.getElementById('snapSound');
+            const snapBtn = document.getElementById("btn-capture")
+            const
+            const webcam = new Webcam(webcamElement, 'user', canvasElement, snapSoundElement);
+            <!-- pokemon -->
+            const pokemonData = JSON.parse(JSON.stringify(pokemons));
+            webcam.start()
+            .then(result =>{
+                console.log("webcam started");
+            })
+            .catch(err => {
+                console.log(err);
+            });
+            snapBtn.onclick = () => {
+            const picture = webcam.snap()
+            }
+        </script>
+    </body>
+</html>  
