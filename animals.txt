@@ -1,21 +1,21 @@
 animals = {
-deer
-horse
-pig
-squirrel
-wolf
-duck
-rabbit
-monkey
-hippo
-tiger
-dog
-frog
-bear
-cat
-gorilla
-bird
-chicken
-crocodile
-lion
-mouse
+  deer
+  horse
+  pig
+  squirrel
+  wolf
+  duck
+  rabbit
+  monkey
+  hippo
+  tiger
+  dog
+  frog
+  bear
+  cat
+  gorilla
+  bird
+  chicken
+  crocodile
+  lion
+  mouse
