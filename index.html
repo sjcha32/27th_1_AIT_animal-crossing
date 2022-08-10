@@ -28,7 +28,7 @@
 </head>
 <body>
 
-    <div style="text-align: center; font-size: 3rem;"> 닮은 동물 찾기 </div>
+    <div style="text-align: center; font-size: 3rem;"> 닮은 동물 찾기 (동물의 숲) </div>
     <div style="display: flex; width: 100%; justify-content: center; align-items: center;">
         <video id="webcam" autoplay playsinline width="600" height="400"></video>
     </div>
@@ -50,7 +50,7 @@
         const snapBtn = document.getElementById("btn-capture")
         const predictBtn = document.getElementById("btn-predict")
         const webcam = new Webcam(webcamElement, 'user', canvasElement, snapSoundElement);
-        const pokemonData = JSON.parse(JSON.stringify(pokemons));
+        const animalData = JSON.parse(JSON.stringify());
         webcam.start()
         .then(result =>{
             console.log("webcam started");
@@ -60,7 +60,7 @@
         });
         snapBtn.onclick = async () => {
             const picture = webcam.snap()
-            const model = await tf.loadLayersModel('./model/model.json')
+            const model = await tf.loadLayersModel('.json')
             let myFaceImage = tf.browser.fromPixels(webcamElement)
             console.log(myFaceImage)
             myFaceImage = tf.image.resizeBilinear(myFaceImage, [128,128])
@@ -70,7 +70,7 @@
             const predictionArray = prediction.dataSync()
             console.log("prediction", prediction)
             const maxValue = predictionArray.indexOf(Math.max(...predictionArray))
-            const result = pokemonData[String(maxValue)]
+            const result = animalData[String(maxValue)]
             document.getElementById("result").setAttribute('src', `https://media.githubusercontent.com/media/sjcha32/animal-crossing/main/results/${result}.png`)
         }
     </script>
