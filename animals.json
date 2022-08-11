@@ -1,0 +1,23 @@
+animals = {,
+	"0": "deer",
+	"1": "horse",
+	"2": "pig",
+	"3": "squirrel",
+	"4": "wolf",
+	"5": "duck",
+	"6": "rabbit",
+	"7": "monkey",
+	"8": "hippo",
+	"9": "tiger",
+	"10": "dog",
+	"11": "frog",
+	"12": "bear",
+	"13": "cat",
+	"14": "gorilla",
+	"15": "bird",
+	"16": "chicken",
+	"17": "crocodile",
+	"18": "lion",
+	"19": "mouse"
+
+}
