@@ -63,7 +63,7 @@
             const model = await tf.loadLayersModel('./model/model.json')
             let myFaceImage = tf.browser.fromPixels(webcamElement)
             console.log(myFaceImage)
-            myFaceImage = tf.image.resizeBilinear(myFaceImage, [96,96])
+            myFaceImage = tf.image.resizeBilinear(myFaceImage, [128,128])
             myFaceImage = tf.expandDims(myFaceImage, 0)
             console.log(myFaceImage)
             const prediction = model.predict(myFaceImage)//.strides.findIndex(ele => ele==1)
