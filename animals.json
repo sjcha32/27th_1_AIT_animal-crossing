@@ -1,4 +1,4 @@
-animals = {,
+animals = {
 	"1": "deer",
 	"2": "horse",
 	"3": "pig",
@@ -19,5 +19,4 @@ animals = {,
 	"18": "crocodile",
 	"19": "lion",
 	"20": "mouse"
-
 }
