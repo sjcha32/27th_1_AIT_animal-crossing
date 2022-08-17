@@ -13,10 +13,11 @@ animals = {
 	"12": "frog",
 	"13": "bear",
 	"14": "cat",
-	"15" : "gorilla",
+	"15": "gorilla",
 	"16": "bird",
 	"17": "chicken",
 	"18": "crocodile",
 	"19": "lion",
 	"20": "mouse"
+
 }

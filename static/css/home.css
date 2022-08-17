@@ -1,0 +1,28 @@
+#btn-capture {
+    text-align: center; 
+    display: inline-block; 
+    padding: 1rem; 
+    margin-top: 1rem;
+    border-radius: 1rem; 
+    font-size: 1.5rem;
+    
+
+    transition: .2s;
+}
+
+#btn {
+    text-align: center; 
+    display: inline-block; 
+    padding: 1rem; 
+    margin-top: 1rem;
+    border-radius: 1rem; 
+    font-size: 1.5rem;
+    
+
+    transition: .2s;
+}
+#btn-capture:hover {
+    cursor: pointer;
+    margin-top: 0.5rem;
+    box-shadow: rgba(182, 162, 133, 0.5) 0 5px 10px 2px;
+}
